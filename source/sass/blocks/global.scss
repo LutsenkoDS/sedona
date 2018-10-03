@@ -1,0 +1,19 @@
+.visually-hidden {
+  position: absolute !important;
+  height: 1px; width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: polygon(0px 0px, 0px 0px,0px 0px, 0px 0px);
+}
+
+body {
+  font-family: "PT Sans";
+  font-size: 14px;
+  color: rgb(51, 51, 51);
+  line-height: 1.857;
+  color: #333333;
+  background-color: #ffffff;
+  font-weight: 400;
+}
+

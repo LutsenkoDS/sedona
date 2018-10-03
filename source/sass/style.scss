@@ -1,4 +1,7 @@
 @import "font.scss";
-@import "blocks/normalize.scss";
+@import "normalize.scss";
 
-body { backgrouns-color: yello};
+@import "blocks/global.scss";
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/page-main.scss";
