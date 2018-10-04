@@ -1,8 +1,25 @@
-.page-header__index-wrapper {
-  min-height: 230px;
+.page-header__logo {
+  display: block;
+}
+
+.page-header__logo-image {
+  margin: 0 auto;
+  position: relative;
 }
 
 .page-header__index-wrapper {
   min-height: 450px;
   margin-bottom: 35px;
+  background-image: url(../../img/bg-back-mobile@1x.jpg);
+  background-position: 50% 55px;
+  background-repeat: no-repeat;
+  background-size: 768px 389px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+.page-header__logo-intro {
+  margin-top: 60px;
+}
+

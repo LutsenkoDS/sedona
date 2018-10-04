@@ -1,0 +1,73 @@
+.top-five {
+  margin-top: 30px;
+}
+
+.top-five__header {
+  font-size: 14px;
+  color: #333333;
+  text-transform: uppercase;
+  line-height: 1.857;
+  text-align: center;
+  height: 94px;
+  margin-bottom: 40px;
+  font-weight: normal;
+}
+
+.top-five__list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.top-five__item-header {
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.444;
+  text-align: center;
+}
+
+.top-five__bg-city {
+  background-image: url(../../img/main-city-mobile@1x.jpg);
+  background-repeat: no-repeat;
+  background-color: #dcdce1;
+  height: 260px;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.top-five__item {
+  p {
+    text-align: center;
+    padding: 43px 15px;
+    color: #ffffff;
+    text-transform: uppercase;
+    line-height: 1.5;
+    text-align: center;
+  }
+}
+
+.top-five__content {
+  background-color: #81b3d2;
+  display: block;
+}
+
+.top-five__sublist {
+  list-style-type: none;
+
+}
+
+.top-five__subitem
+  margin-right: 55px;
+  p {
+
+}
+
+.top-five__subitem-header {
+  font-size: 18px;
+  color: #000000;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.444;
+  text-align: left;
+}
