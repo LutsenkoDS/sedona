@@ -1,0 +1,42 @@
+.catcher {
+  h2 {
+  font-size: 21px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  }
+  p {
+    font-size: 14px;
+    color: #333333;
+    text-transform: uppercase;
+    line-height: 1.7;
+    text-align: center;
+    padding: 0 20px;
+    padding-bottom: 23px;
+  }
+  &__button {
+    display: block;
+    margin: 0 20px;
+    background-color: #81b3d2;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 21px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 0;
+    margin-bottom: 50px;
+  }
+  &-map {
+    background-image: url(../../img/bg-map-mobile@1x.jpg);
+    background-size: 320px 350px;
+    background-color: #eeeeee;
+    width: auto;
+    height: 350px;
+    background-position: center;
+    margin: 35px auto;
+    background-repeat: no-repeat;
+  }
+}
+

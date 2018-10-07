@@ -6,25 +6,42 @@
   font-size: 14px;
   color: #333333;
   text-transform: uppercase;
-  line-height: 1.857;
+  line-height: 1.8;
   text-align: center;
-  height: 94px;
-  margin-bottom: 40px;
+  min-height: 83px;
   font-weight: normal;
+  margin-bottom: 8px;
 }
 
 .top-five__list {
   list-style-type: none;
   padding: 0;
+  margin-top: 0;
+  margin-bottom: 26px;
 }
 
 .top-five__item-header {
   font-size: 18px;
-  color: #ffffff;
+  padding: 47px 15px;
   font-weight: bold;
   text-transform: uppercase;
-  line-height: 1.444;
+  line-height: 1;
   text-align: center;
+}
+
+.top-five__item-tagline {
+  padding-bottom: 40px;
+  font-size: 14px;
+  color: #333333;
+  text-transform: uppercase;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.top-five__item--grey {
+  background-color: #eeeeee;
+  padding: 15px 0;
+  min-height: 36px;
 }
 
 .top-five__bg-city {
@@ -34,33 +51,60 @@
   height: 260px;
   width: 320px;
   margin: 0 auto;
+  margin-bottom: 26px;
 }
 
-.top-five__item {
-  p {
-    text-align: center;
-    padding: 43px 15px;
-    color: #ffffff;
-    text-transform: uppercase;
-    line-height: 1.5;
-    text-align: center;
-  }
+.top-five__bg-bridge {
+  background-image: url(../../img/main-bridge-mobile@1x.jpg);
+  background-repeat: no-repeat;
+  background-color: #dcdce1;
+  height: 260px;
+  width: 320px;
+  margin: 0 auto;
 }
 
-.top-five__content {
+.top-five__bg {
   background-color: #81b3d2;
-  display: block;
+  color: #ffffff;
 }
 
 .top-five__sublist {
   list-style-type: none;
+  margin-bottom: 35px;
 
 }
 
-.top-five__subitem
-  margin-right: 55px;
-  p {
+.top-five__subitem {
+  margin-right: 10px;
+  margin-bottom: 16px;
+  position: relative;
+  padding-left: 55px;
+  &::before {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    width: 39px;
+    height: 37px;
+    left: 6px;
+  }
+}
 
+.top-five__icon-house::before {
+  background-image: url(../../img/icon-house.svg);
+  background-size: 39px, 37px;
+}
+
+.top-five__icon-gift::before {
+  background-image: url(../../img/icon-gift.svg);
+  background-size: 32px, 38px;
+  left: 10px;
+}
+
+.top-five__icon-burger::before {
+  background-image: url(../../img/icon-burger.svg);
+  background-size: 40px, 35px;
+  top: 6px;
+  left: 3px;
 }
 
 .top-five__subitem-header {
@@ -68,6 +112,15 @@
   color: #000000;
   font-weight: bold;
   text-transform: uppercase;
-  line-height: 1.444;
+  line-height: 2.5;
   text-align: left;
+  margin: 0;
+}
+
+.top-five__subitem-tagline {
+  color: #333333;
+  text-transform: uppercase;
+  line-height: 1.5;
+  margin: 0;
+  margin-top: 6px;
 }

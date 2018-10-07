@@ -8,7 +8,7 @@
 }
 
 body {
-  font-family: "PT Sans";
+  font-family: "PT Sans", Arial, sans-serif;;
   font-size: 14px;
   color: rgb(51, 51, 51);
   line-height: 1.857;
@@ -20,5 +20,6 @@ body {
 .mobyle-center {
   width: 290px;
   margin: 0 auto;
-  padding: 0 15px 0;
+  padding-left: 15px;
+  padding-right: 15px;
 }
