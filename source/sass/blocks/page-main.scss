@@ -8,3 +8,23 @@
   width: 260px;
   margin: 27px auto;
 }
+
+.page-main__subheader {
+  font-size: 14px;
+  color: #333333;
+  text-transform: uppercase;
+  line-height: 1.7;
+  text-align: center;
+  min-height: 83px;
+  font-weight: normal;
+  margin-bottom: 8px;
+}
+
+.page-main__block-style {
+  border-top: 1px solid #d6d6d6;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 17px;
+}

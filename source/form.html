@@ -30,22 +30,27 @@
         <a class="page-header__logo" href="#">
           <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" alt="Логотип" width="102" height="83">
         </a>
+        <img class="page-header__logo-image" src="img/text-sedona.svg" alt="Логотип" width="229" height="39">
+      </div>
     </header>
     <main class="page-main">
       <h1 class="page-main__header">Оставьте свой отзыв</h1>
       <section class="form">
-        <h2>Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</h2>
+        <h2 class="page-main__subheader">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</h2>
         <form class="main-form" method="get" action="https://echo.htmlacademy.ru">
           <fieldset class="form-introduce">
             <legend class="form-introduce__legend">Представьтесь:</legend>
             <label class="form-introduce__label" for="user-name">
-              Имя*: <input class="form-introduce__input" id="user-name" type="text" name="user-name" placeholder="Петр">
+              <span>Имя*:</span>
+              <input class="form-introduce__input form-input" id="user-name" type="text" name="user-name" placeholder="Петр">
             </label>
             <label class="form-introduce__label" for="user-surname">
-              Фамилия*: <input class="form-introduce__input" id="user-surname" type="text" name="user-surname" placeholder="Иванов">
+              <span>Фамилия*:</span>
+              <input class="form-introduce__input form-input" id="user-surname" type="text" name="user-surname" placeholder="Иванов">
             </label>
             <label class="form-introduce__label" for="user-patronymic">
-              Отчество*: <input class="form-introduce__input" id="user-patronymic" type="text" name="user-patronymic" placeholder="Александрович">
+              <span>Отчество*:</span>
+              <input class="form-introduce__input form-input" id="user-patronymic" type="text" name="user-patronymic" placeholder="Александрович">
             </label>
           </fieldset>
           <fieldset class="form-contacts">

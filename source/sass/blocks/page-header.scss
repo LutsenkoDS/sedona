@@ -17,6 +17,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  .page-header__logo-image {
+    margin-bottom: 54px;
+  }
 }
 
 .page-header__wrapper {
