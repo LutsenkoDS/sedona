@@ -1,14 +1,19 @@
 .main-form {
   margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
 
   legend {
     position: relative;
-    margin-bottom: 16px;
+    margin-bottom: 13px;
     width: 100%;
     text-align: center;
     font-size: 18px;
     font-weight: bold;
     text-transform: uppercase;
+    line-height: 27px;
 
     &::before {
       content: "";
@@ -16,7 +21,7 @@
       width: 100vw;
       display: block;
       height: 1px;
-      top: -15px;
+      top: -18px;
       left: -20px;
       background-color: #d6d6d6;
       background-repeat: no-repeat;
@@ -27,9 +32,22 @@
     display: flex;
     flex-wrap: wrap;
     padding: 0 18px;
-    padding-bottom: 21px;
+    padding-bottom: 32px;
     border: none;
     position: relative;
+  }
+
+  > button {
+    border: none;
+    background-color: #81b3d2;
+    min-width: 280px;
+    margin: 0 auto;
+    color: #ffffff;
+    font-size: 21px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 58px;
+    margin-bottom: 71px;
   }
 }
 
@@ -39,7 +57,6 @@
   display: flex;
   align-items: baseline;
   flex-grow: 1;
-  margin-bottom: 20px;
 }
 
 .form-input {
@@ -54,10 +71,18 @@
   width: 155px;
   padding: 18px;
   line-height: 22px;
+  margin: 10px 0;
 }
 
 .form-introduce__label span {
   margin-right: 15px;
+}
+
+.main-form__wrapper {
+  display: inherit;
+  flex-flow: inherit;
+  justify-content: inherit;
+  align-items: inherit;
 }
 
 .form__icon-style {
@@ -66,13 +91,15 @@
   background-color: #e6e6e6;
   display: flex;
   justify-content: center;
+  align-items: center;
+  margin: 10px 0;
 }
 
 .form-contacts__label {
   font-size: 14px;
   color: #333333;
   text-transform: uppercase;
-  line-height: 40px;
+  line-height: 25px;
   margin-left: 22px;
 }
 
@@ -80,16 +107,69 @@
   margin-bottom: 13px;
 }
 
-// Radio-button
+.form-review__label,
+.form-choice__label {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+  padding-left: 80px;
+  position: relative;
+  line-height: 71px;
 
-.form-review__label {
-  &::before {
-    display: inline-block;
-    position: relative;
-    content: "";
-    width: 25px;
-    height: 25px;
+  .main-form__wrapper {
+    margin-top: 6px;
+    margin-bottom: 5px;
+  }
+}
+
+.form-review__label::before {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  background-color: #f2f2f2;
+  background-size: 55px;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  border: 22px solid #f2f2f2;
+}
+
+.form-choice {
+  .form-choice__legend {
+    margin-bottom: 3px;
+  }
+
+  .form-choice__label {
+    line-height: 80px;
+  }
+}
+
+.form-choice__label::before {
+  content: "";
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  background-color: #f2f2f2;
+  background-size: 56px;
+  top: 15px;
+  left: 0;
+}
+
+.form-contacts .main-form__wrapper {
+  margin-top: 10px;
+}
+
+.form-comment {
+  textarea {
+    border: none;
     background-color: #f2f2f2;
-    border-radius: 50%;
+    min-width: 220px;
+    height: 110px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 25px;
+    margin-bottom: 25px;
   }
 }
