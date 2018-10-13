@@ -1,6 +1,7 @@
 .main-form {
   margin-top: 32px;
-  legend{
+
+  legend {
     position: relative;
     margin-bottom: 16px;
     width: 100%;
@@ -8,6 +9,7 @@
     font-size: 18px;
     font-weight: bold;
     text-transform: uppercase;
+
     &::before {
       content: "";
       position: absolute;
@@ -20,6 +22,7 @@
       background-repeat: no-repeat;
     }
   }
+
   fieldset {
     display: flex;
     flex-wrap: wrap;
@@ -27,7 +30,6 @@
     padding-bottom: 21px;
     border: none;
     position: relative;
-
   }
 }
 
@@ -37,7 +39,6 @@
   display: flex;
   align-items: baseline;
   flex-grow: 1;
-  margin-bottom: 2px;
   margin-bottom: 20px;
 }
 
@@ -63,7 +64,8 @@
   width: 58px;
   height: 58px;
   background-color: #e6e6e6;
-
+  display: flex;
+  justify-content: center;
 }
 
 .form-contacts__label {
@@ -71,9 +73,23 @@
   color: #333333;
   text-transform: uppercase;
   line-height: 40px;
-  margin-bottom: 2px;
+  margin-left: 22px;
 }
 
 .form-contacts__legend {
   margin-bottom: 13px;
+}
+
+// Radio-button
+
+.form-review__label {
+  &::before {
+    display: inline-block;
+    position: relative;
+    content: "";
+    width: 25px;
+    height: 25px;
+    background-color: #f2f2f2;
+    border-radius: 50%;
+  }
 }

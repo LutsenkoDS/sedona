@@ -10,13 +10,14 @@
 .page-header__index-wrapper {
   min-height: 450px;
   margin-bottom: 35px;
-  background-image: url(../../img/bg-back-mobile@1x.jpg);
+  background-image: url("../../img/bg-back-mobile@1x.jpg");
   background-position: 50% 55px;
   background-repeat: no-repeat;
   background-size: 768px 389px;
   display: flex;
   flex-direction: column;
   align-items: center;
+
   .page-header__logo-image {
     margin-bottom: 54px;
   }
@@ -25,7 +26,7 @@
 .page-header__wrapper {
   min-height: 216px;
   margin-bottom: 35px;
-  background-image: url(../../img/bg-back-mobile@1x.jpg);
+  background-image: url("../../img/bg-back-mobile@1x.jpg");
   background-position: 50% -176px;
   background-repeat: no-repeat;
   background-size: 768px 389px;
@@ -33,4 +34,3 @@
   flex-direction: column;
   align-items: center;
 }
-

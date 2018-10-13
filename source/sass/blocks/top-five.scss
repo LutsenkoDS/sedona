@@ -34,7 +34,7 @@
 }
 
 .top-five__bg-city {
-  background-image: url(../../img/main-city-mobile@1x.jpg);
+  background-image: url("../../img/main-city-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-color: #dcdce1;
   height: 260px;
@@ -44,7 +44,7 @@
 }
 
 .top-five__bg-bridge {
-  background-image: url(../../img/main-bridge-mobile@1x.jpg);
+  background-image: url("../../img/main-bridge-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-color: #dcdce1;
   height: 260px;
@@ -60,7 +60,6 @@
 .top-five__sublist {
   list-style-type: none;
   margin-bottom: 35px;
-
 }
 
 .top-five__subitem {
@@ -68,6 +67,7 @@
   margin-bottom: 16px;
   position: relative;
   padding-left: 55px;
+
   &::before {
     content: "";
     position: absolute;
@@ -79,18 +79,18 @@
 }
 
 .top-five__icon-house::before {
-  background-image: url(../../img/icon-house.svg);
+  background-image: url("../../img/icon-house.svg");
   background-size: 39px, 37px;
 }
 
 .top-five__icon-gift::before {
-  background-image: url(../../img/icon-gift.svg);
+  background-image: url("../../img/icon-gift.svg");
   background-size: 32px, 38px;
   left: 10px;
 }
 
 .top-five__icon-burger::before {
-  background-image: url(../../img/icon-burger.svg);
+  background-image: url("../../img/icon-burger.svg");
   background-size: 40px, 35px;
   top: 6px;
   left: 3px;

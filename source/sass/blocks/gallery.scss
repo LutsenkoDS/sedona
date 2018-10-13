@@ -5,7 +5,7 @@
   text-transform: uppercase;
   line-height: 1.7;
   text-align: center;
-  padding: 0px 25px;
+  padding: 0 25px;
   font-weight: normal;
 }
 
@@ -40,8 +40,8 @@
   text-decoration: none;
   letter-spacing: -1.3px;
   min-width: 280px;
+
   h3 {
-    margin-top: 4px;
     margin-bottom: 0;
     margin-top: 5px;
   }
@@ -58,9 +58,10 @@
   margin: 0;
   min-width: 280px;
   margin-bottom: 3px;
+
   a {
-  text-decoration: none;
-  color: #333333;
+    text-decoration: none;
+    color: #333333;
   }
 }
 
@@ -73,12 +74,13 @@
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
+
   &::before {
     content: "";
     position: relative;
-    background-image: url(../../img/icon-like.svg);
+    background-image: url("../../img/icon-like.svg");
     width: 23px;
-    height:21px;
+    height: 21px;
     background-size: 23px 21px;
     background-repeat: no-repeat;
     display: inline-block;
