@@ -16,6 +16,7 @@
   text-transform: uppercase;
   line-height: 1;
   text-align: center;
+  margin-bottom: 0;
 }
 
 .top-five__item-tagline {
@@ -25,9 +26,10 @@
   text-transform: uppercase;
   line-height: 1.5;
   text-align: center;
+  margin-top: 0;
 }
 
-.top-five__item--grey {
+.top-five__grey-block {
   background-color: #eeeeee;
   padding: 15px 0;
   min-height: 36px;

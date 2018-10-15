@@ -16,7 +16,7 @@
   margin: 35px auto;
 }
 
-.page-footer__social__icon {
+.page-footer__social-icon {
   background-color: #81b3d2;
   background-position: center;
   width: 46px;
@@ -33,10 +33,10 @@
   text-align: center;
   display: flex;
   justify-content: center;
+}
 
-  a {
-    text-decoration: none;
-    color: #000000;
-    margin: 7px;
-  }
+.page-footer__copyright-link {
+  text-decoration: none;
+  color: #000000;
+  margin: 7px;
 }
