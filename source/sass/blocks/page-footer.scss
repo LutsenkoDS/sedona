@@ -40,3 +40,15 @@
   color: #000000;
   margin: 7px;
 }
+
+@media screen and (min-width: 760px) {
+  .page-footer{
+    display: flex;
+    justify-content: flex-end;
+    align-content: flex-end;
+    align-items: center;
+    align-self: initial;
+    width: 80%;
+    margin: 0 auto;
+  }
+}

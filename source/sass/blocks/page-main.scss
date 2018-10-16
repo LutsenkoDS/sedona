@@ -1,11 +1,10 @@
 .page-main__header {
-  font-size: 18px;
   font-weight: bold;
   text-transform: uppercase;
   line-height: 1.4;
   text-align: center;
-  width: 260px;
   margin: 27px auto;
+  line-height: 26px;
 }
 
 .page-main__subheader {
@@ -25,4 +24,10 @@
   flex-direction: column;
   align-items: center;
   padding-bottom: 17px;
+}
+
+@media screen and (min-width: 760px) {
+  .page-main__header {
+    font-size: 21px;
+  }
 }
