@@ -61,7 +61,6 @@
 
 .top-five__sublist {
   list-style-type: none;
-  margin-bottom: 35px;
   max-width: 480px;
   margin: 0 auto;
 }
@@ -172,6 +171,7 @@
     display: flex;
     max-width: none;
   }
+
   .top-five__grey-block {
     width: 30%;
     flex-grow: 1;
