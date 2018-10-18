@@ -125,10 +125,8 @@
     flex-grow: 1;
     flex-shrink: 0;
     margin-bottom: 0;
-  }
-
-  .top-five__bg-bridge {
-    order: -1;
+    background-size: cover;
+    background-position: center;
   }
 
   .top-five__list {
@@ -175,5 +173,14 @@
   .top-five__grey-block {
     width: 30%;
     flex-grow: 1;
+  }
+
+  .top-five__bg-city {
+    background-image: url("../img/main-city-tablet@1x.jpg");
+  }
+
+  .top-five__bg-bridge {
+    background-image: url("../img/main-bridge-tablet@1x.jpg");
+    order: -1;
   }
 }

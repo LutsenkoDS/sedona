@@ -98,3 +98,25 @@
   font-weight: normal;
   margin-bottom: 33px;
 }
+
+@media screen and (min-width: 760px) {
+  .galery {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .gallery > h2 {
+    padding: 0 21%;
+  }
+
+  .gallery__list {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .page-main__block-style:nth-child(1) {
+    width: 1200px;
+    min-width: 70%;
+  }
+}
