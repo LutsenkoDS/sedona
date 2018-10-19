@@ -41,7 +41,7 @@
         <form class="main-form" method="get" action="https://echo.htmlacademy.ru">
           <fieldset class="form-introduce">
             <legend class="form-introduce__legend">Представьтесь:</legend>
-            <div class="main-form__wrapper">
+            <div class="form__wrapper">
               <label class="form-introduce__label" for="user-name">
                 <span>Имя*:</span>
                 <input class="form-introduce__input form-input" id="user-name" type="text" name="user-name" placeholder="Петр">
@@ -58,7 +58,7 @@
           </fieldset>
           <fieldset class="form-contacts">
             <legend class="form-contacts__legend">Контактная информация:</legend>
-            <div class="main-form__wrapper">
+            <div class="form__wrapper">
               <label class="form-contacts__label" for="user-tel">Контактный телефон*:</label>
               <input class="form-contacts__input form-input" id="user-tel" type="text" name="user-tel"  placeholder="Введите телефон">
               <div class="form__icon-style"><img src="img/icon-phone.svg" alt="Иконка телефона" width="18" height="18"></div>
@@ -69,7 +69,7 @@
           </fieldset>
           <fieldset class="form-review">
             <legend class="form-review__legend">Ваше общее впечатление:</legend>
-            <div class="main-form__wrapper">
+            <div class="form__wrapper">
               <label class="form-review__label">
                 <input class="form-review__input visually-hidden" type="radio" name="review" id="review-positive" value="positive" checked> Скорее положительное
               </label>
@@ -83,7 +83,7 @@
           </fieldset>
           <fieldset class="form-choice">
             <legend class="form-choice__legend">Посещенные достопримечательности:</legend>
-            <div class="main-form__wrapper">
+            <div class="form__wrapper">
               <label class="form-choice__label">
                 <input class="visually-hidden" type="checkbox" name="Devil's Bridge"> Мост Дьявола
               </label>
@@ -100,8 +100,8 @@
           </fieldset>
           <fieldset class="form-comment">
             <legend class="form-comment__legend">Опишите свои эмоции:</legend>
-            <div class="main-form__wrapper">
-              <textarea name="comment" cols="20" rows="3" placeholder="Опишите подробно все свои восторги"></textarea>
+            <div class="form__wrapper">
+              <textarea class="form-comment__textarea" name="comment" cols="20" rows="3" placeholder="Опишите подробно все свои восторги"></textarea>
             </div>
           </fieldset>
           <button class="button" type="submit">Отправить отзыв</button>

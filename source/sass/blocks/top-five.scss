@@ -121,7 +121,6 @@
 @media screen and (min-width: 760px) {
   .top-five__bg-city,
   .top-five__bg-bridge {
-    width: 512px;
     flex-grow: 1;
     flex-shrink: 0;
     margin-bottom: 0;
@@ -139,6 +138,7 @@
     flex-wrap: wrap;
     margin: 0 auto;
     justify-content: center;
+    width: 100%;
   }
 
   .top-five__item-wrapper {

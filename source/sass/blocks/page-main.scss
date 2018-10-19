@@ -3,6 +3,7 @@
 }
 
 .page-main__header {
+  font-size: 30px;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
@@ -32,6 +33,11 @@
 @media screen and (min-width: 760px) {
   .page-main__header {
     font-size: 21px;
+  }
+
+  .page-main__block-style:nth-child(1) {
+    max-width: 1200px;
+    min-width: 70%;
   }
 
   .page-main {

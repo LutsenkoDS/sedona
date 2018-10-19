@@ -1,0 +1,67 @@
+.main-form {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+
+  legend {
+    position: relative;
+    margin-bottom: 13px;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 27px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100vw;
+      display: block;
+      height: 1px;
+      top: -18px;
+      left: -20px;
+      background-color: #d6d6d6;
+      background-repeat: no-repeat;
+    }
+  }
+
+  fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 18px;
+    padding-bottom: 32px;
+    border: none;
+    position: relative;
+  }
+
+  > button {
+    border: none;
+    background-color: #81b3d2;
+    min-width: 280px;
+    margin: 0 auto;
+    color: #ffffff;
+    font-size: 21px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 58px;
+    margin-bottom: 71px;
+  }
+}
+
+@media screen and (min-width: 760px) {
+  .main-form {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .main-form fieldset {
+    justify-content: center;
+  }
+
+  .main-form legend::before {
+    width: 100%;
+  }
+}
