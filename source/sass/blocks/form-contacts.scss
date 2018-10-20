@@ -1,0 +1,39 @@
+.form-contacts__label {
+  font-size: 14px;
+  color: #333333;
+  text-transform: uppercase;
+  line-height: 25px;
+  margin-left: 22px;
+  width: 80%;
+  align-self: center;
+}
+
+.form-contacts__legend {
+  margin-bottom: 13px;
+}
+
+.form-contacts .form__wrapper {
+  margin-top: 10px;
+}
+
+.form-comment__textarea {
+  border: none;
+  background-color: #f2f2f2;
+  min-width: 220px;
+  height: 110px;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 25px;
+  margin-bottom: 25px;
+}
+
+@media screen and (min-width: 1150px) {
+  .form-contacts {
+    padding-left: 0;
+    padding-right: 0;
+
+    .form__wrapper {
+      flex-wrap: nowrap;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.form-comment__button {
+  border: none;
+  background-color: #81b3d2;
+  min-width: 280px;
+  margin: 0 auto;
+  color: #ffffff;
+  font-size: 21px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 58px;
+  margin-bottom: 71px;
+}
+
+@media screen and (min-width: 760px) {
+  .form-comment {
+    width: 80%;
+
+    .form__wrapper {
+      width: 100%;
+    }
+  }
+
+  .form-comment__textarea {
+    width: 100%;
+  }
+}
