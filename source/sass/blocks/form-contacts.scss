@@ -12,28 +12,17 @@
   margin-bottom: 13px;
 }
 
-.form-contacts .form__wrapper {
+.form-contacts__wrapper {
   margin-top: 10px;
-}
-
-.form-comment__textarea {
-  border: none;
-  background-color: #f2f2f2;
-  min-width: 220px;
-  height: 110px;
-  font-size: 18px;
-  font-weight: bold;
-  padding: 25px;
-  margin-bottom: 25px;
 }
 
 @media screen and (min-width: 1150px) {
   .form-contacts {
     padding-left: 0;
     padding-right: 0;
+  }
 
-    .form__wrapper {
-      flex-wrap: nowrap;
-    }
+  .form-contacts__wrapper {
+    flex-wrap: nowrap;
   }
 }
