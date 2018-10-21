@@ -33,12 +33,23 @@
     margin: 35px auto;
     background-repeat: no-repeat;
   }
+
+  &__header {
+    font-size: 21px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+  }
 }
 
-.catcher__header {
-  font-size: 21px;
-  font-weight: bold;
-  text-transform: uppercase;
-  line-height: 1.2;
-  text-align: center;
+@media screen and (min-width: 760px) {
+  .catcher__button {
+    margin: 0 20%;
+  }
+
+  .catcher__map {
+    background-image: url("../img/bg-map-tablet@1x.jpg");
+    background-size: cover;
+  }
 }

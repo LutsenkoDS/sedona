@@ -1,3 +1,8 @@
+.page-header {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .page-header__logo {
   display: block;
 }
@@ -29,4 +34,27 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+@media screen and (min-width: 760px) {
+  .page-header__logo {
+    position: absolute;
+    top: 0;
+  }
+
+  .page-header__index-wrapper {
+    min-height: 530px;
+    background-position: 50% 0;
+    background-size: 1200px 518px;
+  }
+
+  .page-header__logo-intro {
+    margin: 77px;
+  }
+
+  .page-header__wrapper {
+    min-height: 290px;
+    margin-bottom: 74px;
+    background-position: 50% 0;
+  }
 }
