@@ -1,0 +1,28 @@
+.form-contacts__label {
+  font-size: 14px;
+  color: #333333;
+  text-transform: uppercase;
+  line-height: 25px;
+  margin-left: 22px;
+  width: 80%;
+  align-self: center;
+}
+
+.form-contacts__legend {
+  margin-bottom: 13px;
+}
+
+.form-contacts__wrapper {
+  margin-top: 10px;
+}
+
+@media screen and (min-width: 1150px) {
+  .form-contacts {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .form-contacts__wrapper {
+    flex-wrap: nowrap;
+  }
+}
