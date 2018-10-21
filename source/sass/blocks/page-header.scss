@@ -9,12 +9,12 @@
 
 .page-header__logo-image {
   position: relative;
-  margin-bottom: 54px;
+  margin-bottom: 51px;
 }
 
 .page-header__index-wrapper {
   min-height: 450px;
-  margin-bottom: 35px;
+  margin-bottom: 33px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-position: 50% 55px;
   background-repeat: no-repeat;
@@ -46,10 +46,13 @@
     min-height: 530px;
     background-position: 50% 0;
     background-size: 1200px 518px;
+    margin-bottom: 37px;
   }
 
   .page-header__logo-intro {
     margin: 77px;
+    width: 460px;
+    height: 350px;
   }
 
   .page-header__wrapper {

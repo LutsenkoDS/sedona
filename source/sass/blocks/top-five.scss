@@ -7,20 +7,45 @@
   padding: 0;
   margin-top: 0;
   margin-bottom: 26px;
+  counter-reset: myCounter;
 }
 
 .top-five__item-header {
   font-size: 18px;
-  padding: 47px 15px;
+  padding: 12px 15px;
   font-weight: bold;
   text-transform: uppercase;
   line-height: 1;
   text-align: center;
   margin-bottom: 0;
+  padding-top: 42px;
+}
+
+.top-five__item-header--grey {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1;
+  text-align: center;
+  margin-bottom: 13px;
+  padding-top: 29px;
+  margin-top: 0;
 }
 
 .top-five__item-tagline {
-  padding-bottom: 40px;
+  padding: 0 20px 40px;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #333333;
+  text-transform: uppercase;
+  line-height: 1.5;
+  text-align: center;
+  margin-top: 0;
+}
+
+.top-five__item-tagline--grey {
+  padding: 0 40px 30px;
+  margin-bottom: 0;
   font-size: 14px;
   color: #333333;
   text-transform: uppercase;
@@ -31,8 +56,8 @@
 
 .top-five__grey-block {
   background-color: #eeeeee;
-  padding: 15px 0;
-  min-height: 36px;
+  margin: 0;
+  padding-bottom: 0;
 }
 
 .top-five__bg-city {
@@ -62,12 +87,13 @@
 .top-five__sublist {
   list-style-type: none;
   max-width: 480px;
-  margin: 0 auto;
+  margin: 0 auto 33px;
+  padding-left: 5%;
 }
 
 .top-five__subitem {
   margin-right: 10px;
-  margin-bottom: 16px;
+  margin-bottom: 18px;
   position: relative;
   padding-left: 55px;
 
@@ -76,7 +102,7 @@
     position: absolute;
     background-repeat: no-repeat;
     width: 39px;
-    height: 37px;
+    height: 40px;
     left: 6px;
   }
 }
@@ -116,6 +142,27 @@
   margin: 0;
   margin-top: 6px;
   flex-shrink: 1;
+  padding-right: 5%;
+}
+
+.top-five__item-tagline::before {
+  content: "-№"counter(myCounter)"-";
+  position: relative;
+  counter-increment: myCounter;
+  color: #ffffff;
+  display: block;
+  text-align: center;
+  margin-bottom: 17px;
+}
+
+.top-five__item-tagline--grey::before {
+  content: "-№"counter(myCounter)"-";
+  position: relative;
+  counter-increment: myCounter;
+  color: #000000;
+  display: block;
+  text-align: center;
+  margin-bottom: 15px;
 }
 
 @media screen and (min-width: 760px) {
@@ -126,6 +173,72 @@
     margin-bottom: 0;
     background-size: cover;
     background-position: center;
+  }
+
+  .top-five__item-header--grey {
+    font-size: 21px;
+    text-transform: uppercase;
+    line-height: 25px;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto 10px;
+    margin-bottom: 10px;
+  }
+
+  .top-five__icon-gift {
+    order: 2;
+  }
+
+  .top-five__subitem-header {
+    text-align: center;
+    font-size: 21px;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-bottom: 20px;
+  }
+  .top-five__subitem-tagline {
+    font-size: 14px;
+    color: #000000;
+    text-transform: uppercase;
+    line-height: 20px;
+    text-align: center;
+    padding: 0;
+  }
+
+  .top-five__item-tagline {
+    margin: 0;
+    padding: 0 45px;
+    text-transform: uppercase;
+    line-height: 22px;
+  }
+
+  .top-five__subitem {
+    margin-right: 0;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 170px;
+    padding: 0;
+    margin-left: 0px;
+    margin-bottom: 63px;
+  }
+
+  .top-five__subitem::before {
+    position: relative;
+    width: 77px;
+    height: 71px;
+    background-size: contain;
+    margin: 54px auto 31px;
+    display: block;
+  }
+
+  .top-five__icon-burger {
+    order: 1;;
+  }
+
+  .top-five__item-tagline::before {
+    position: relative;
   }
 
   .top-five__list {
@@ -147,6 +260,9 @@
     max-width: 1200px;
     width: 33.3%;
     flex-wrap: wrap;
+    align-content: flex-start;
+    min-height: 260px;
+    background-color: #81b3d2;
   }
 
   .top-five__bg {
@@ -156,23 +272,31 @@
   .top-five__item-header {
     margin: 0;
     font-size: 21px;
-    padding: 70px 30px 0;
+    padding: 47px 30px 10px;
     line-height: 25px;
-  }
-
-  .top-five__item-tagline {
-    margin: 0;
-    padding: 0 45px;
   }
 
   .top-five__sublist {
     display: flex;
     max-width: none;
+    padding: 0;
+    justify-content: space-between;
+    width: 86%;
+    margin: 0 auto;
+    align-items: baseline;
+    width: 100%;
+    justify-content: space-around;
   }
 
   .top-five__grey-block {
     width: 30%;
     flex-grow: 1;
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+
+  .top-five__item-tagline--grey::before {
+    margin-bottom: 21px;
   }
 
   .top-five__bg-city {
