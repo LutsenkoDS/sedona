@@ -146,7 +146,7 @@
 }
 
 .top-five__item-tagline::before {
-  content: "-№"counter(myCounter)"-";
+  content: "–№"counter(myCounter) "–";
   position: relative;
   counter-increment: myCounter;
   color: #ffffff;
@@ -156,7 +156,7 @@
 }
 
 .top-five__item-tagline--grey::before {
-  content: "-№"counter(myCounter)"-";
+  content: "–№"counter(myCounter) "–";
   position: relative;
   counter-increment: myCounter;
   color: #000000;
@@ -196,6 +196,7 @@
     line-height: 1;
     margin-bottom: 20px;
   }
+
   .top-five__subitem-tagline {
     font-size: 14px;
     color: #000000;
@@ -205,22 +206,26 @@
     padding: 0;
   }
 
+  .top-five__bg {
+    width: 100%;
+  }
+
   .top-five__item-tagline {
-    margin: 0;
+    margin: 0 auto;
     padding: 0 45px;
     text-transform: uppercase;
     line-height: 22px;
+    width: 286px;
   }
 
   .top-five__subitem {
     margin-right: 0;
-    padding-left: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 170px;
     padding: 0;
-    margin-left: 0px;
+    margin-left: 0;
     margin-bottom: 63px;
   }
 
@@ -234,7 +239,7 @@
   }
 
   .top-five__icon-burger {
-    order: 1;;
+    order: 1;
   }
 
   .top-five__item-tagline::before {
@@ -265,23 +270,18 @@
     background-color: #81b3d2;
   }
 
-  .top-five__bg {
-    width: 100%;
-  }
-
   .top-five__item-header {
-    margin: 0;
+    margin: 0 auto;
     font-size: 21px;
-    padding: 47px 30px 10px;
     line-height: 25px;
+    padding: 47px 0 10px;
+    width: 200px;
   }
 
   .top-five__sublist {
     display: flex;
     max-width: none;
     padding: 0;
-    justify-content: space-between;
-    width: 86%;
     margin: 0 auto;
     align-items: baseline;
     width: 100%;
@@ -306,5 +306,28 @@
   .top-five__bg-bridge {
     background-image: url("../img/main-bridge-tablet@1x.jpg");
     order: -1;
+  }
+}
+
+@media screen and (min-width: 1190px) {
+  .top-five__item-tagline {
+    padding: 0;
+  }
+
+  .top-five__subitem {
+    margin-bottom: 86px;
+    width: 300px;
+  }
+
+  .top-five__item-header {
+    padding: 53px 0 10px;
+  }
+
+  .top-five__item-header--grey {
+    width: 150px;
+  }
+
+  .top-five__item-tagline--grey {
+    padding-bottom: 47px;
   }
 }
