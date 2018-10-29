@@ -71,8 +71,9 @@
 
   .form-comment__textarea {
     width: 100%;
-    padding: 2% 3% 4.7%;
-    margin: 11px 5.5%;
+    padding: 15px 22px;
+    margin: 11px 58px;
+    height: 130px;
   }
 }
 
@@ -84,13 +85,9 @@
 
   .form-comment__textarea {
     margin: 0;
-    margin-bottom: 11px;
-    padding: 2% 2% 2%;
-    height: 124px;
-  }
-
-  .form-contacts__label-wrapper {
-    width: 50%;
+    margin-bottom: 13px;
+    padding: 20px;
+    height: 120px;
   }
 
   .form-comment__clause {
@@ -100,9 +97,5 @@
   .form-comment__button {
     margin-left: 0;
     width: 50%;
-  }
-
-  .form-contacts__label-wrapper:nth-child(1) {
-    max-width: 42%;
   }
 }

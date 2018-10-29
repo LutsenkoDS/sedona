@@ -60,8 +60,8 @@
             <legend class="form__legend">Контактная информация:</legend>
             <div class="form__wrapper form-contacts__wrapper">
               <div class="form-contacts__label-wrapper">
-                <label class="form-contacts__label global-to-tablet" for="user-tel">Контактный телефон*:</label>
-                <label class="form-contacts__label global-desktop" for="user-tel">Телефон*:</label>
+                <label class="form-contacts__label form-contacts__to-tablet" for="user-tel">Контактный телефон*:</label>
+                <label class="form-contacts__label form-contacts__desktop" for="user-tel">Телефон*:</label>
                 <input class="form__input" id="user-tel" type="text" name="user-tel"  placeholder="Введите телефон">
                 <div class="form__icon"><img src="img/icon-phone.svg" alt="Иконка телефона" width="18" height="18"></div>
               </div>
@@ -75,31 +75,38 @@
           <fieldset class="form-review form__fieldset">
             <legend class="form__legend">Ваше общее впечатление:</legend>
             <div class="form__wrapper">
-              <label class="form-review__label form__votel">
-                <input class="visually-hidden" type="radio" name="review" id="review-positive" value="positive" checked> Скорее положительное
+              <input class="visually-hidden form-review__input" type="radio" name="review" id="review-positive" value="positive" checked>
+              <label class="form-review__label form__votel" for="review-positive">
+                Скорее положительное
               </label>
-              <label class="form-review__label form__votel">
-                <input class="visually-hidden" type="radio" name="review" id="review-negative" value="negative"> Скорее отрицательное
+              <input class="visually-hidden form-review__input" type="radio" name="review" id="review-negative" value="negative">
+              <label class="form-review__label form__votel" for="review-negative">
+                Скорее отрицательное
               </label>
-              <label class="form-review__label form__votel">
-                <input class="visually-hidden" type="radio" name="review" id="review-none" value="none"> Затрудняюсь ответить
+              <input class="visually-hidden form-review__input" type="radio" name="review" id="review-none" value="none">
+              <label class="form-review__label form__votel" for="review-none">
+                Затрудняюсь ответить
               </label>
             </div>
           </fieldset>
           <fieldset class="form-choice form__fieldset">
             <legend class="form__legend form-choice__legend">Посещенные достопримечательности:</legend>
             <div class="form__wrapper form-choice__wrapper">
-              <label class="form-choice__label form__votel">
-                <input class="visually-hidden" type="checkbox" name="Devil's Bridge"> Мост Дьявола
+              <input class="visually-hidden form-choice__input" type="checkbox" name="Devil's Bridge" id="Bridge">
+              <label class="form-choice__label form__votel" for="Bridge">
+                Мост Дьявола
               </label>
-              <label class="form-choice__label form__votel">
-                <input class="visually-hidden" type="checkbox" name="Mountain Bell"> Гора-Колокол
+              <input class="visually-hidden form-choice__input" type="checkbox" name="Mountain Bell" id="mountain">
+              <label class="form-choice__label form__votel" for="mountain">
+                Гора-Колокол
               </label>
-              <label class="form-choice__label form__votel">
-                <input class="visually-hidden" type="checkbox" name="Slide Park"> Слайд-парк
+              <input class="visually-hidden form-choice__input" type="checkbox" name="Slide Park" id="park">
+              <label class="form-choice__label form__votel" for="park">
+                Слайд-парк
               </label>
-              <label class="form-choice__label form__votel">
-                <input class="visually-hidden" type="checkbox" name="Red Rock"> Красные скалы
+              <input class="visually-hidden form-choice__input" type="checkbox" name="Red Rock" id="rock">
+              <label class="form-choice__label form__votel" for="rock">
+                Красные скалы
               </label>
             </div>
           </fieldset>

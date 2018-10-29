@@ -15,17 +15,3 @@ body {
   background-color: #ffffff;
   font-weight: 400;
 }
-
-.global-desktop {
-  display: none;
-}
-
-@media screen and (min-width: 1190px) {
-  .global-to-tablet {
-    display: none;
-  }
-
-  .global-desktop {
-    display: inherit;
-  }
-}

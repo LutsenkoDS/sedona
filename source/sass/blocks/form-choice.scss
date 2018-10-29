@@ -8,10 +8,45 @@
     height: 56px;
     background-color: #f2f2f2;
     background-size: 56px;
+    border-radius: 4px;
     top: 15px;
     left: 0;
   }
+
+  &:hover::before {
+    background-color: #e5e5e5;
+  }
+
+  &:active::before {
+    background-color: #d5d5d5;
+  }
 }
+
+.form-choice__input:checked {
+  + .form-choice__label {
+    &::before {
+      color: #333333;
+      font-size: 35px;
+      text-align: center;
+      line-height: 51px;
+      background-image: url(../../img/icon-tick.svg);
+      background-repeat: no-repeat;
+      background-position: 50%;
+      background-size: 50%;
+    }
+
+    &:active::before {
+      background-color: rgba(51, 51, 51, 0.6);
+      opacity: 0.3;
+    }
+  }
+}
+
+//
+
+
+
+
 
 .form-choice legend {
   margin-bottom: 2px;
