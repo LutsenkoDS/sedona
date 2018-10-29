@@ -29,7 +29,7 @@
       font-size: 35px;
       text-align: center;
       line-height: 51px;
-      background-image: url(../../img/icon-tick.svg);
+      background-image: url("../img/icon-tick.svg");
       background-repeat: no-repeat;
       background-position: 50%;
       background-size: 50%;
@@ -41,12 +41,6 @@
     }
   }
 }
-
-//
-
-
-
-
 
 .form-choice legend {
   margin-bottom: 2px;

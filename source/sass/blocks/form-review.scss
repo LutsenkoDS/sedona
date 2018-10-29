@@ -13,10 +13,13 @@
 }
 
 .form-review__label {
+  line-height: 69px;
+
   &:hover::before {
     background-color: #e5e5e5;
     border-color: #e5e5e5;
   }
+
   &:active::before {
     background-color: #d5d5d5;
     border-color: #d5d5d5;
@@ -25,14 +28,14 @@
 
 .form-review__input:checked {
   + .form-review__label {
-    &:before{
+    &::before {
       background-color: #333333;
     }
 
     &:hover::before {
-      background-color: #333333;
       border-color: #e5e5e5;
     }
+
     &:active::before {
       background-color: #a4a4a4;
       border-color: #d5d5d5;
@@ -42,10 +45,6 @@
 
 .form-review {
   margin-bottom: 7px;
-}
-
-.form-review__label {
-  line-height: 69px;
 }
 
 .form-review legend {
