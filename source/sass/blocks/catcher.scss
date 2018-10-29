@@ -7,6 +7,7 @@
     text-align: center;
     padding: 0 20px;
     padding-bottom: 29px;
+    margin-bottom: 9px;
   }
 
   &__button {
@@ -38,7 +39,8 @@
     font-size: 21px;
     font-weight: bold;
     text-transform: uppercase;
-    line-height: 1.2;
+    line-height: 25px;
+    margin-bottom: 21px;
     text-align: center;
   }
 }
@@ -51,14 +53,15 @@
   .catcher__header {
     font-size: 30px;
     text-transform: uppercase;
-    line-height: 1;
     text-align: center;
     margin: 53px 0 31px;
+    line-height: 35px;
   }
 
   .catcher__map {
     background-image: url("../img/bg-map-tablet@1x.jpg");
     background-size: cover;
+    max-width: 1200px;
     margin: 59px auto 0;
   }
 }
@@ -66,5 +69,10 @@
 @media screen and (min-width: 1190px) {
   .catcher__button {
     margin: 20px 31% 67px;
+  }
+
+  .catcher p {
+    max-width: 450px;
+    margin: 0 auto;
   }
 }

@@ -9,7 +9,11 @@
 
 .page-header__logo-image {
   position: relative;
-  margin-bottom: 51px;
+  margin-bottom: 12px; /*51*/
+}
+
+.page-header__logo-intro {
+  margin-top: 39px;
 }
 
 .page-header__index-wrapper {
@@ -59,5 +63,11 @@
     min-height: 290px;
     margin-bottom: 74px;
     background-position: 50% 0;
+  }
+}
+
+@media screen and (min-width: 1190px) {
+  .page-header__wrapper {
+    margin-bottom: 123px;
   }
 }

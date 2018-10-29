@@ -13,22 +13,69 @@
   }
 }
 
+.form-choice legend {
+  margin-bottom: 2px;
+}
+
 @media screen and (min-width: 760px) {
   .form-choice__label {
-    width: 30%;
+    width: 45%;
+    padding: 0;
+
+    &::before {
+      position: relative;
+      top: 25%;
+      display: inline-block;
+      left: -19px;
+    }
+  }
+
+  .form-choice {
+    margin: 0 auto 56px;
+
+    div {
+      justify-content: flex-start;
+      padding-left: 156px;
+    }
+
+    legend {
+      padding: 0 30%;
+      margin-bottom: 20px;
+    }
   }
 }
 
-@media screen and (min-width: 1150px) {
+@media screen and (min-width: 1190px) {
   .form-choice {
     width: 100%;
     flex-wrap: nowrap;
     justify-content: space-around;
 
-    .form-choice__wrapper {
-      justify-content: space-around;
-      width: 100%;
-      flex-wrap: nowrap;
+    div {
+      justify-content: space-between;
+      padding-left: 0;
     }
+
+    legend {
+      padding: 0;
+      margin-top: 1px;
+    }
+  }
+
+  .form-choice__legend {
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 0;
+  }
+
+  .form-choice__wrapper {
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: nowrap;
+  }
+
+  .form-choice__label {
+    width: auto;
+    margin-left: 20px;
   }
 }

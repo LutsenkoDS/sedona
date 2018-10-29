@@ -1,20 +1,61 @@
 .form-review__label::before {
   content: "";
   position: absolute;
-  width: 22px;
-  height: 22px;
+  width: 11px;
+  height: 11px;
   background-color: #f2f2f2;
   background-size: 55px;
   border-radius: 50%;
-  top: 0;
-  left: 0;
+  top: 8px;
+  left: 3px;
   display: inline-block;
   border: 22px solid #f2f2f2;
+}
+
+.form-review {
+  margin-bottom: 7px;
+}
+
+.form-review__label {
+  line-height: 69px;
+}
+
+.form-review legend {
+  margin-bottom: 16px;
 }
 
 @media screen and (min-width: 760px) {
   .form-review {
     order: -1;
     width: 40%;
+    padding-left: 55px;
+    margin-bottom: 61px;
+  }
+
+  .form-review__label {
+    padding-left: 80px;
+    line-height: 78px;
+  }
+
+  .form-review legend {
+    text-align: left;
+    margin-bottom: 47px;
+  }
+}
+
+@media screen and (min-width: 1190px) {
+  .form-review__label::before {
+    top: 5px;
+  }
+
+  .form-review {
+    width: 49%;
+    padding: 0;
+    margin-bottom: 55px;
+  }
+
+  .form-review legend {
+    padding-left: 80px;
+    text-align: left;
   }
 }
