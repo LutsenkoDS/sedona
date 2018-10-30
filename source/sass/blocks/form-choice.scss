@@ -8,27 +8,103 @@
     height: 56px;
     background-color: #f2f2f2;
     background-size: 56px;
+    border-radius: 4px;
     top: 15px;
     left: 0;
   }
+
+  &:hover::before {
+    background-color: #e5e5e5;
+  }
+
+  &:active::before {
+    background-color: #d5d5d5;
+  }
+}
+
+.form-choice__input:checked {
+  + .form-choice__label {
+    &::before {
+      color: #333333;
+      font-size: 35px;
+      text-align: center;
+      line-height: 51px;
+      background-image: url("../img/icon-tick.svg");
+      background-repeat: no-repeat;
+      background-position: 50%;
+      background-size: 50%;
+    }
+
+    &:active::before {
+      background-color: rgba(51, 51, 51, 0.6);
+      opacity: 0.3;
+    }
+  }
+}
+
+.form-choice legend {
+  margin-bottom: 2px;
 }
 
 @media screen and (min-width: 760px) {
   .form-choice__label {
-    width: 30%;
+    width: 45%;
+    padding: 0;
+
+    &::before {
+      position: relative;
+      top: 25%;
+      display: inline-block;
+      left: -19px;
+    }
+  }
+
+  .form-choice {
+    margin: 0 auto 56px;
+
+    div {
+      justify-content: flex-start;
+      padding-left: 156px;
+    }
+
+    legend {
+      padding: 0 30%;
+      margin-bottom: 20px;
+    }
   }
 }
 
-@media screen and (min-width: 1150px) {
+@media screen and (min-width: 1190px) {
   .form-choice {
     width: 100%;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-around;
 
-    .form-choice__wrapper {
-      justify-content: space-around;
-      width: 100%;
-      flex-wrap: nowrap;
+    div {
+      justify-content: space-between;
+      padding-left: 0;
     }
+
+    legend {
+      padding: 0;
+      margin-top: 1px;
+    }
+  }
+
+  .form-choice__legend {
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 0;
+  }
+
+  .form-choice__wrapper {
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: nowrap;
+  }
+
+  .form-choice__label {
+    width: auto;
+    margin-left: 20px;
   }
 }
