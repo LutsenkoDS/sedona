@@ -43,6 +43,13 @@
     margin-bottom: 21px;
     text-align: center;
   }
+
+  @media screen and (min-resolution: 144dpi),
+    (min-resolution: 1.5dppx) {
+    &__map {
+      background-image: url("../img/bg-map-mobile@2x.jpg");
+    }
+  }
 }
 
 @media screen and (min-width: 760px) {
@@ -64,6 +71,13 @@
     max-width: 1200px;
     margin: 59px auto 0;
   }
+
+  @media screen and (min-resolution: 144dpi),
+    (min-resolution: 1.5dppx) {
+    .catcher__map {
+      background-image: url("../img/bg-map-tablet@2x.jpg");
+    }
+  }
 }
 
 @media screen and (min-width: 1190px) {
@@ -74,5 +88,16 @@
   .catcher p {
     max-width: 450px;
     margin: 0 auto;
+  }
+
+  .catcher__map {
+    background-image: url("../img/bg-map-desktop@1x.jpg");
+  }
+
+  @media screen and (min-resolution: 144dpi),
+    (min-resolution: 1.5dppx) {
+    .catcher__map {
+      background-image: url("../img/bg-map-desktop@2x.jpg");
+    }
   }
 }
