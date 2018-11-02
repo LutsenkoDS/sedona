@@ -3,8 +3,16 @@
   padding: 0 25px;
 }
 
+.main__subheader {
+  margin-bottom: 45px;
+}
+
 @media screen and (min-width: 1190px) {
   .main__text-content {
-    margin: 24px auto;
+    margin: 25px auto;
+  }
+
+  .main__subheader {
+    min-height: 50px;
   }
 }

@@ -33,6 +33,19 @@
     background-position: center;
     margin: 35px auto;
     background-repeat: no-repeat;
+
+    &::after {
+      content: "";
+      position: relative;
+      display: block;
+      width: 27px;
+      height: 27px;
+      top: 50%;
+      left: 50%;
+      background-image: url("../img/map-marker.svg");
+      background-repeat: no-repeat;
+      background-size: 27px;
+    }
   }
 
   &__header {
@@ -57,11 +70,15 @@
     margin: 0 20%;
   }
 
+  .catcher p {
+    margin-bottom: 14px;
+  }
+
   .catcher__header {
     font-size: 30px;
     text-transform: uppercase;
     text-align: center;
-    margin: 53px 0 31px;
+    margin: 53px 0 25px;
     line-height: 35px;
   }
 
@@ -85,8 +102,12 @@
     margin: 20px 31% 67px;
   }
 
+  .catcher__header {
+    margin: 53px 0 23px;
+  }
+
   .catcher p {
-    max-width: 450px;
+    max-width: 40%;
     margin: 0 auto;
   }
 

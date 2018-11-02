@@ -37,6 +37,27 @@
 
 .main-nav__button {
   position: absolute;
+  right: 14px;
+  top: 10px;
+  border: none;
+  background-color: initial;
+
+  &::before {
+    content: "✖";
+    color: #ffffff;
+    font-size: 30px;
+  }
+
+  &::after {
+    content: "";
+    background-image: url("../img/icon-menu.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: 23px;
+    height: 21px;
+    /*display: inline-block; */
+    display: none;
+  }
 }
 
 @media screen and (min-width: 760px) {

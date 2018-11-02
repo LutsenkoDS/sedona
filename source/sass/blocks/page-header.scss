@@ -52,6 +52,8 @@
   .page-header__logo {
     position: absolute;
     top: 0;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .page-header__index-wrapper {
@@ -76,7 +78,7 @@
 
   .page-header__wrapper {
     min-height: 300px;
-    margin-bottom: 74px;
+    margin-bottom: 65px;
     background-position: 100% 100%;
     background-size: 100%;
     background-image: url("../img/bg-back-tablet@1x.jpg");
