@@ -157,6 +157,10 @@
     margin: 50px auto;
   }
 
+  .gallery__like {
+    bottom: 26px;
+  }
+
   .gallery__video {
     max-width: 800px;
     max-height: 500px;
@@ -179,7 +183,8 @@
 
   .gallery__item-name {
     position: absolute;
-    bottom: 5px;
+    bottom: 17px;
+    left: 20px;
     color: #ffffff;
 
     a {
@@ -193,6 +198,11 @@
     img {
       height: 267px;
     }
+  }
+
+  .gallery__item-head {
+    margin-left: 20px;
+    margin-top: 12px;
   }
 
   .gallery__item-header {
