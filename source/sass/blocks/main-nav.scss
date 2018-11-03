@@ -46,6 +46,10 @@
     }
   }
 
+  .main-nav__button {
+    display: none;
+  }
+
   .main-nav__list {
     display: flex;
     justify-content: space-around;
