@@ -25,6 +25,18 @@
   align-items: center;
   justify-content: space-around;
   fill: #ffffff;
+
+  &:active svg {
+    opacity: 0.3;
+  }
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+  }
 }
 
 .page-footer__copyright {
@@ -34,6 +46,15 @@
   display: flex;
   justify-content: center;
   font-size: 14px;
+
+  &:hover svg {
+    color: #81b3d2;
+  }
+
+  &:active svg {
+    color: #000000;
+    opacity: 0.3;
+  }
 
   a {
     margin-left: 6px;
@@ -64,9 +85,11 @@
     margin: 37px auto;
   }
 
-  .page-footer__copyright a {
-    margin-left: 9px;
-    letter-spacing: 0.4px;
+  .page-footer__copyright {
+    a {
+      margin-left: 9px;
+      letter-spacing: 0.4px;
+    }
   }
 }
 

@@ -1,5 +1,11 @@
+
 .form-comment {
   padding-bottom: 27px;
+  max-width: 100%;
+}
+
+.form-comment__wrapper {
+  width: 100%;
 }
 
 .form-comment__button {
@@ -13,6 +19,20 @@
   text-transform: uppercase;
   line-height: 58px;
   margin-bottom: 71px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
 }
 
 .form-comment__textarea {
@@ -25,6 +45,19 @@
   padding: 16px 38px 32px 20px;
   margin-bottom: 25px;
   line-height: 25px;
+  width: 100%;
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:focus {
+    background-color: #ffffff;
+    outline-color: #e5e5e5;
+    outline-width: 4px;
+    outline-offset: -4px;
+    outline-style: solid;
+  }
 }
 
 .form-comment__clause {
@@ -63,10 +96,6 @@
     margin-left: auto;
     margin-right: 60px;
     margin-bottom: 73px;
-  }
-
-  .form-comment__wrapper {
-    width: 100%;
   }
 
   .form-comment__textarea {

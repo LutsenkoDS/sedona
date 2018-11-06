@@ -22,11 +22,24 @@
     text-decoration: none;
     padding: 12px 0;
     margin-bottom: 50px;
+
+    &:hover {
+      background-color: #669ec0;
+    }
+
+    &:active {
+      background-color: #5496bd;
+      color: rgba(255, 255, 255, 0.3);
+    }
+
+    &:disabled {
+      background-color: #e5e5e5;
+    }
   }
 
   &__map {
     background-image: url("../img/bg-map-mobile@1x.jpg");
-    background-size: 320px 350px;
+    background-size: cover;
     background-color: #eeeeee;
     width: auto;
     height: 350px;
@@ -42,9 +55,10 @@
       height: 27px;
       top: 50%;
       left: 50%;
-      background-image: url("../img/map-marker.svg");
+      background-image: url("../img/icon-map-marker.svg");
       background-repeat: no-repeat;
       background-size: 27px;
+      transform: translateY(-50%) translateX(-50%);
     }
   }
 
@@ -72,6 +86,7 @@
 
   .catcher p {
     margin-bottom: 14px;
+    padding: 0 20% 31px;
   }
 
   .catcher__header {

@@ -1,6 +1,21 @@
 .page-header {
   max-width: 1200px;
   margin: 0 auto;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/bg-intro-triangle-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 1200px 57px;
+    width: 100%;
+    height: 57px;
+    bottom: 0;
+    transform: translate(-50%);
+    left: 50%;
+    background-position-x: center;
+  }
 }
 
 .page-header__logo {
@@ -9,7 +24,7 @@
 
 .page-header__logo-image {
   position: relative;
-  margin-bottom: 12px; /*51*/
+  margin-bottom: 12px;
 }
 
 .page-header__logo-intro {
@@ -20,9 +35,9 @@
   min-height: 450px;
   margin-bottom: 33px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-position: 50% 55px;
+  background-position: center 56px;
   background-repeat: no-repeat;
-  background-size: 768px 389px;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -38,6 +53,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.page-header__wrapper::before,
+.page-header__index-wrapper::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 56px;
+  background-color: #ffffff;
+  position: absolute;
 }
 
 @media (min-resolution: 144dpi),
@@ -56,11 +81,16 @@
     transform: translateX(-50%);
   }
 
+  .page-header__wrapper::before,
+  .page-header__index-wrapper::before {
+    content: none;
+  }
+
   .page-header__index-wrapper {
-    min-height: 530px;
-    background-position: 0 0;
-    background-size: 100%;
-    margin-bottom: 37px;
+    margin-bottom: 49px;
+    min-height: 518px;
+    background-position: 50%;
+    background-size: cover;
     background-image: url("../img/bg-back-tablet@1x.jpg");
   }
 
@@ -71,14 +101,14 @@
   }
 
   .page-header__logo-slogan {
-    margin-top: 100px;
+    margin-top: 95px;
     height: 80px;
     width: 461px;
   }
 
   .page-header__wrapper {
-    min-height: 300px;
-    margin-bottom: 65px;
+    min-height: 290px;
+    margin-bottom: 75px;
     background-position: 100% 100%;
     background-size: 100%;
     background-image: url("../img/bg-back-tablet@1x.jpg");
@@ -101,11 +131,16 @@
   .page-header__index-wrapper,
   .page-header__wrapper {
     background-image: url("../img/bg-back-desktop@1x.jpg");
+    min-height: 300px;
   }
 
   .page-header__logo-image {
     width: 187px;
     height: auto;
+  }
+
+  .page-header__logo-slogan {
+    margin-top: 100px;
   }
 }
 

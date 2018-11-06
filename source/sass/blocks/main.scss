@@ -7,6 +7,12 @@
   margin-bottom: 45px;
 }
 
+@media screen and (min-width: 760px) {
+  .main__subheader {
+    margin-bottom: 49px;
+  }
+}
+
 @media screen and (min-width: 1190px) {
   .main__text-content {
     margin: 25px auto;

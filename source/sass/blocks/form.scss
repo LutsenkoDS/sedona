@@ -27,6 +27,18 @@
   padding: 18px;
   line-height: 22px;
   margin: 10px 0;
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:focus {
+    background-color: #ffffff;
+    outline-color: #e5e5e5;
+    outline-width: 4px;
+    outline-offset: -4px;
+    outline-style: solid;
+  }
 }
 
 .form__wrapper {
@@ -77,12 +89,17 @@
   padding-left: 80px;
   position: relative;
   line-height: 71px;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 760px) {
   .form {
     flex-direction: row;
     flex-wrap: wrap;
+  }
+
+  .form__section {
+    margin-top: 30px;
   }
 
   .form__votel {
@@ -137,6 +154,6 @@
   }
 
   .form__subheader {
-    margin-bottom: 64px;
+    margin-bottom: 60px;
   }
 }
