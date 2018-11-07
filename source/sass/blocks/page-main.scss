@@ -30,6 +30,10 @@
   padding-bottom: 17px;
 }
 
+.page-main__block-style:last-child {
+  position: relative;
+}
+
 @media screen and (min-width: 760px) {
   .page-main__header {
     font-size: 30px;
@@ -64,10 +68,11 @@
   }
 
   .page-main__block-style:last-child {
-    max-width: 1200px;
+    max-width: 648px;
     width: 100%;
     background-color: #ffffff;
     padding-top: 67px;
+    margin: 0 auto;
   }
 
   .page-main {
@@ -78,12 +83,12 @@
 
 @media screen and (min-width: 1190px) {
   .page-main__block-style {
-    width: auto;
+    width: 33.3%;
     flex-grow: 1;
   }
 
   .page-main__subheader {
-    width: 37%;
+    width: 50%;
     margin: 0 auto;
     margin-bottom: 27px;
   }
@@ -95,6 +100,7 @@
   }
 
   .page-main__block-style:last-child {
-    margin-bottom: 35px;
+    max-width: 800px;
+    margin: 0 auto;
   }
 }

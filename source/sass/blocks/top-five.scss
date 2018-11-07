@@ -10,6 +10,19 @@
   margin-top: 0;
   margin-bottom: 26px;
   counter-reset: myCounter;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    border-color: transparent #81b3d2 #81b3d2 #81b3d2;
+    border-width: 15px 160px;
+    top: -15px;
+    border-style: solid;
+    box-sizing: border-box;
+    width: 100%;
+  }
 }
 
 .top-five__item-header {
@@ -112,19 +125,25 @@
 .top-five__icon-house::before {
   background-image: url("../img/icon-house.svg");
   background-size: 39px, 37px;
+  width: 97px;
+  height: 77px;
 }
 
 .top-five__icon-gift::before {
   background-image: url("../img/icon-gift.svg");
   background-size: 32px, 38px;
+  width: 89px;
+  height: 78px;
   left: 10px;
 }
 
 .top-five__icon-burger::before {
   background-image: url("../img/icon-burger.svg");
   background-size: 40px, 35px;
-  top: 6px;
-  left: 3px;
+  top: 0;
+  left: 2px;
+  width: 84px;
+  height: 72px;
 }
 
 .top-five__subitem-header {
@@ -189,6 +208,7 @@
     margin-bottom: 0;
     background-size: cover;
     background-position: center;
+    height: auto;
   }
 
   .top-five__item-header--grey {
@@ -209,15 +229,15 @@
     text-align: center;
     font-size: 21px;
     text-transform: uppercase;
-    line-height: 1;
-    margin-bottom: 20px;
+    line-height: 30px;
+    margin-bottom: 12px;
   }
 
   .top-five__subitem-tagline {
     font-size: 14px;
     color: #000000;
     text-transform: uppercase;
-    line-height: 20px;
+    line-height: 21px;
     text-align: center;
     padding: 0;
   }
@@ -247,10 +267,8 @@
 
   .top-five__subitem::before {
     position: relative;
-    width: 77px;
-    height: 71px;
     background-size: contain;
-    margin: 54px auto 31px;
+    margin: 53px auto 27px;
     display: block;
   }
 
@@ -265,6 +283,10 @@
   .top-five__list {
     display: flex;
     flex-wrap: wrap;
+
+    &::before {
+      content: none;
+    }
   }
 
   .top-five__item {
@@ -282,15 +304,15 @@
     width: 33.3%;
     flex-wrap: wrap;
     align-content: flex-start;
-    min-height: 260px;
+    min-height: 257px;
     background-color: #81b3d2;
   }
 
   .top-five__item-header {
-    margin: 0 auto;
+    margin: 0 auto 13px;
     font-size: 21px;
     line-height: 25px;
-    padding: 47px 0 10px;
+    padding: 47px 0 0;
     width: 200px;
   }
 
@@ -342,6 +364,14 @@
     padding: 0;
   }
 
+  .top-five__subitem-tagline {
+    margin-top: 0;
+  }
+
+  .top-five__grey-block {
+    padding-bottom: 20px;
+  }
+
   .top-five__bg-city {
     background-image: url("../img/main-city-desktop@1x.jpg");
   }
@@ -364,12 +394,12 @@
   }
 
   .top-five__subitem {
-    margin-bottom: 86px;
+    margin-bottom: 85px;
     width: 300px;
   }
 
   .top-five__item-header {
-    padding: 53px 0 10px;
+    padding: 55px 0 0;
   }
 
   .top-five__item-header--grey {

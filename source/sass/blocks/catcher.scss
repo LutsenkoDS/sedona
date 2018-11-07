@@ -22,17 +22,44 @@
     text-decoration: none;
     padding: 12px 0;
     margin-bottom: 50px;
+
+    &:hover {
+      background-color: #669ec0;
+    }
+
+    &:active {
+      background-color: #5496bd;
+      color: rgba(255, 255, 255, 0.3);
+    }
+
+    &:disabled {
+      background-color: #e5e5e5;
+    }
   }
 
   &__map {
     background-image: url("../img/bg-map-mobile@1x.jpg");
-    background-size: 320px 350px;
+    background-size: cover;
     background-color: #eeeeee;
     width: auto;
     height: 350px;
     background-position: center;
     margin: 35px auto;
     background-repeat: no-repeat;
+
+    &::after {
+      content: "";
+      position: relative;
+      display: block;
+      width: 27px;
+      height: 27px;
+      top: 50%;
+      left: 50%;
+      background-image: url("../img/icon-map-marker.svg");
+      background-repeat: no-repeat;
+      background-size: 27px;
+      transform: translateY(-50%) translateX(-50%);
+    }
   }
 
   &__header {
@@ -57,11 +84,16 @@
     margin: 0 20%;
   }
 
+  .catcher p {
+    margin-bottom: 14px;
+    padding: 0 20% 31px;
+  }
+
   .catcher__header {
     font-size: 30px;
     text-transform: uppercase;
     text-align: center;
-    margin: 53px 0 31px;
+    margin: 53px 0 25px;
     line-height: 35px;
   }
 
@@ -85,8 +117,12 @@
     margin: 20px 31% 67px;
   }
 
+  .catcher__header {
+    margin: 53px 0 23px;
+  }
+
   .catcher p {
-    max-width: 450px;
+    max-width: 40%;
     margin: 0 auto;
   }
 
