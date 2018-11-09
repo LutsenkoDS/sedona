@@ -48,11 +48,11 @@
   font-size: 14px;
 
   &:hover svg {
-    color: #81b3d2;
+    fill: #81b3d2;
   }
 
   &:active svg {
-    color: #000000;
+    fill: #000000;
     opacity: 0.3;
   }
 
@@ -72,7 +72,7 @@
 @media screen and (min-width: 760px) {
   .page-footer {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-around;
     align-content: flex-end;
     align-items: baseline;
     align-self: initial;

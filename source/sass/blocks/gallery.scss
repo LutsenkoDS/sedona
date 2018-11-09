@@ -197,7 +197,7 @@
 
   .gallery__video-controls_button {
     transform: none;
-    background-color: initial;
+    background-color: transparent;
     width: 100%;
     left: 0;
     padding-left: 33px;
@@ -257,8 +257,12 @@
   }
 
   .gallery__video {
-    width: center;
-    height: 500px;
+    height: 499px;
+
+    img {
+      width: 648px;
+      height: 499px;
+    }
   }
 
   .gallery__like {
@@ -284,6 +288,7 @@
 
   .gallery__like--svg {
     opacity: 1;
+    fill: #ffffff;
 
     &:hover {
       opacity: 0.6;
@@ -303,6 +308,11 @@
     max-width: 800px;
     max-height: 500px;
     margin: 0 auto;
+
+    img {
+      width: 800px;
+      height: 500px;
+    }
   }
 
   .gallery__item-desk {
