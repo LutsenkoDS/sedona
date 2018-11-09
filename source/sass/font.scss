@@ -3,6 +3,7 @@
   src: url("../fonts/ptsans.woff") format("woff2"),
     url("Ptsans.woff2") format("woff2");
   font-weight: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -10,4 +11,5 @@
   src: url("../fonts/ptsansbold.woff") format("woff2"),
     url("Ptsansbold.woff2") format("woff2");
   font-weight: bold;
+  font-display: optional;
 }
