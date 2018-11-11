@@ -364,6 +364,11 @@
     padding: 0;
   }
 
+  .top-five__item-header--grey {
+    padding-top: 35px;
+    width: 150px;
+  }
+
   .top-five__subitem-tagline {
     margin-top: 0;
   }
@@ -400,10 +405,6 @@
 
   .top-five__item-header {
     padding: 55px 0 0;
-  }
-
-  .top-five__item-header--grey {
-    width: 150px;
   }
 
   .top-five__item-tagline--grey {

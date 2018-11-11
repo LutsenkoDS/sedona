@@ -168,7 +168,7 @@
     display: flex;
     flex-wrap: wrap;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto 20px;
   }
 
   .gallery__item-header-link {
@@ -284,6 +284,10 @@
 @media screen and (min-width: 1190px) {
   .gallery__list {
     margin: 50px auto 84px;
+  }
+
+  .gallery {
+    margin: 0 auto 12px;
   }
 
   .gallery__like--svg {
