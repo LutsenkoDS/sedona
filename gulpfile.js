@@ -12,10 +12,10 @@ var webp = require("gulp-webp");
 var rename = require("gulp-rename");
 var svgstore = require("gulp-svgstore");
 var posthtml = require("gulp-posthtml");
-var include = require("posthtml-include")
-var del = require("del")
-const htmlmin = require('gulp-htmlmin');
-const minify = require('gulp-minify');
+var include = require("posthtml-include");
+var del = require("del");
+const htmlmin = require("gulp-htmlmin");
+const minify = require("gulp-minify");
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")

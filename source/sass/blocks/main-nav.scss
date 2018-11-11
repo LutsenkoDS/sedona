@@ -44,7 +44,7 @@
   &::after {
     content: "";
     display: block;
-    background-image: url("../img/icon-cross.svg");
+    background-image: url("../img/icon-cross.svg../img/icon-menu.svg");
     background-size: auto;
     background-repeat: no-repeat;
     height: 22px;
@@ -53,11 +53,15 @@
 }
 
 .main-nav__button:checked + .main-nav__button--toggle::after {
-  background-image: url("../img/icon-menu.svg");
+  background-image: url("../img/icon-cross.svg");
+}
+
+.main-nav {
+  display: none;
 }
 
 .main-nav__button:checked ~ .main-nav {
-  display: none;
+  display: block;
 }
 
 @media screen and (min-width: 760px) {

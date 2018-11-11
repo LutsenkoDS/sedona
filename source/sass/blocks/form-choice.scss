@@ -50,17 +50,20 @@
   .form-choice__label {
     width: 45%;
     padding: 0;
+    display: flex;
+    line-height: 25px;
+    margin: 16px 0;
 
     &::before {
       position: relative;
-      top: 25%;
+      top: -25%;
       display: inline-block;
       left: -19px;
     }
   }
 
   .form-choice {
-    margin: 0 auto 56px;
+    margin: 0 auto 40px;
 
     div {
       justify-content: flex-start;
@@ -69,7 +72,7 @@
 
     legend {
       padding: 0 30%;
-      margin-bottom: 20px;
+      margin-bottom: 40px;
     }
   }
 }

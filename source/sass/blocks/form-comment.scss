@@ -38,24 +38,29 @@
 .form-comment__textarea {
   border: none;
   background-color: #f2f2f2;
+  outline-color: #f2f2f2;
+  outline-width: 4px;
+  outline-style: solid;
   min-width: 220px;
   height: 110px;
   font-size: 18px;
   font-weight: bold;
-  padding: 16px 38px 32px 20px;
-  margin-bottom: 25px;
+  padding: 16px 34px 28px 20px;
+  margin-bottom: 30px;
   line-height: 25px;
   width: 100%;
 
   &:hover {
     background-color: #e5e5e5;
+    outline-color: #e5e5e5;
+    outline-width: 4px;
+    outline-style: solid;
   }
 
   &:focus {
     background-color: #ffffff;
     outline-color: #e5e5e5;
     outline-width: 4px;
-    outline-offset: -4px;
     outline-style: solid;
   }
 }

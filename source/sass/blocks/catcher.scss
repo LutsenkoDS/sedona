@@ -1,4 +1,6 @@
 .catcher {
+  margin-bottom: 33px;
+
   p {
     font-size: 14px;
     color: #333333;
@@ -81,7 +83,11 @@
 
 @media screen and (min-width: 760px) {
   .catcher__button {
-    margin: 0 20% 60px;
+    margin: 0 20% 50px;
+  }
+
+  .catcher {
+    margin-bottom: 25px;
   }
 
   .catcher p {
@@ -116,6 +122,11 @@
   .catcher__button {
     margin: 20px 31% 67px;
   }
+
+  .catcher {
+    margin-bottom: 10px;
+  }
+
 
   .catcher__header {
     margin: 53px 0 23px;
