@@ -51,11 +51,11 @@
   justify-content: center;
   font-size: 14px;
 
-  &:hover svg {
+  svg:hover {
     fill: #81b3d2;
   }
 
-  &:active svg {
+  svg:active {
     fill: #000000;
     opacity: 0.3;
   }

@@ -66,6 +66,16 @@
   }
 }
 
+.gallery__video-control {
+  background-color: inherit;
+  border: none;
+  outline: none;
+
+  &:nth-child(2) {
+    margin-left: auto;
+  }
+}
+
 .gallery__video-controls {
   display: inline-block;
   border-width: 22px;
@@ -118,10 +128,6 @@
       fill: #333333;
       opacity: 0.3;
     }
-  }
-
-  svg:nth-child(2) {
-    margin-left: auto;
   }
 
   svg:nth-child(3) {
@@ -221,8 +227,7 @@
         opacity: 0.3;
       }
     }
-
-    svg use path {
+    path {
       fill: inherit;
       stroke: inherit;
       stroke-width: inherit;
@@ -321,7 +326,6 @@
   }
 
   .gallery__item-desk {
-    max-width: 430px;
     margin: 0 auto 72px;
   }
 
