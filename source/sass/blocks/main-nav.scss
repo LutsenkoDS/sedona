@@ -33,7 +33,7 @@
   }
 }
 
-.main-nav__button--toggle {
+.main-nav__toggle {
   position: absolute;
   right: 21px;
   top: 17px;
@@ -44,7 +44,7 @@
   &::after {
     content: "";
     display: block;
-    background-image: url("../img/icon-cross.svg../img/icon-menu.svg");
+    background-image: url("../img/icon-menu.svg");
     background-size: auto;
     background-repeat: no-repeat;
     height: 22px;
@@ -52,7 +52,7 @@
   }
 }
 
-.main-nav__button:checked + .main-nav__button--toggle::after {
+.main-nav__button:checked + .main-nav__toggle::after {
   background-image: url("../img/icon-cross.svg");
 }
 
@@ -70,7 +70,7 @@
     display: block;
   }
 
-  .main-nav__button--toggle {
+  .main-nav__toggle {
     display: none;
   }
 
