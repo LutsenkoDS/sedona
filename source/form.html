@@ -88,15 +88,15 @@
             <legend class="form__legend">Ваше общее впечатление:</legend>
             <div class="form__wrapper">
               <input class="visually-hidden form-review__input" type="radio" name="review" id="review-positive" value="positive" checked>
-              <label class="form-review__label form__votel" for="review-positive">
+              <label class="form-review__label form__votel" tabindex="1" for="review-positive">
                 Скорее положительное
               </label>
               <input class="visually-hidden form-review__input" type="radio" name="review" id="review-negative" value="negative">
-              <label class="form-review__label form__votel" for="review-negative">
+              <label class="form-review__label form__votel" tabindex="1" for="review-negative">
                 Скорее отрицательное
               </label>
               <input class="visually-hidden form-review__input" type="radio" name="review" id="review-none" value="none">
-              <label class="form-review__label form__votel" for="review-none">
+              <label class="form-review__label form__votel" tabindex="1" for="review-none">
                 Затрудняюсь ответить
               </label>
             </div>
@@ -104,19 +104,19 @@
           <fieldset class="form-choice form__fieldset">
             <legend class="form__legend form-choice__legend">Посещенные достопримечательности:</legend>
             <div class="form__wrapper form-choice__wrapper">
-              <input class="visually-hidden form-choice__input" type="checkbox" name="attractions" value="Devil's Bridge" id="Bridge">
+              <input class="visually-hidden form-choice__input" tabindex="0" type="checkbox" name="attractions" value="Devil's Bridge" id="Bridge">
               <label class="form-choice__label form__votel" tabindex="1" for="Bridge">
                 Мост Дьявола
               </label>
-              <input class="visually-hidden form-choice__input" type="checkbox" name="attractions" value="Mountain Bell" id="mountain">
+              <input class="visually-hidden form-choice__input" tabindex="0" type="checkbox" name="attractions" value="Mountain Bell" id="mountain">
               <label class="form-choice__label form__votel" tabindex="1" for="mountain">
                 Гора-Колокол
               </label>
-              <input class="visually-hidden form-choice__input" type="checkbox" name="attractions" value="Slide Park" id="park">
+              <input class="visually-hidden form-choice__input" tabindex="0" type="checkbox" name="attractions" value="Slide Park" id="park">
               <label class="form-choice__label form__votel" tabindex="1" for="park">
                 Слайд-парк
               </label>
-              <input class="visually-hidden form-choice__input" type="checkbox" name="attractions" value="Red Rock" id="rock">
+              <input class="visually-hidden form-choice__input" tabindex="0" type="checkbox" name="attractions" value="Red Rock" id="rock">
               <label class="form-choice__label form__votel" tabindex="1" for="rock">
                 Красные скалы
               </label>

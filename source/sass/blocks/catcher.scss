@@ -81,10 +81,18 @@
   }
 }
 
+.catcher_header-shift {
+	display: none;
+}
+
 @media screen and (min-width: 760px) {
   .catcher__button {
     margin: 0 20% 50px;
   }
+
+  .catcher_header-shift {
+		display: inline;
+	}
 
   .catcher {
     margin-bottom: 25px;
