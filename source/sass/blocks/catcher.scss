@@ -82,7 +82,7 @@
 }
 
 .catcher_header-shift {
-	display: none;
+  display: none;
 }
 
 @media screen and (min-width: 760px) {
@@ -90,9 +90,9 @@
     margin: 0 20% 50px;
   }
 
-  .catcher_header-shift {
-		display: inline;
-	}
+  .catcher__header-shift {
+    display: inline;
+  }
 
   .catcher {
     margin-bottom: 25px;
