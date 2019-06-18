@@ -8,10 +8,11 @@ node_js:
       - "node_modules"
 
   script:
-    -gulp build --prod
+    - npm start
 
   deploy:
     provider: pages
+    github-token: $GITHUB_TOKEN
     committer-from-gh: true
     skip-cleanup: true
     keep-history: true
@@ -23,6 +24,7 @@ node_js:
 
   deploy:
     provider: pages
+    github-token: $GITHUB_TOKEN
     committer-from-gh: true
     skip-cleanup: true
     keep-history: true
