@@ -7,9 +7,7 @@ cache:
     - "node_modules"
 
 script:
-  - yarn test
-  - yarn build
-  - echo my-custom-domain.ru > build/CNAME
+  - gulp build
 
 deploy:
   provider: pages
