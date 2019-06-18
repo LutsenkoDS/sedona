@@ -3,5 +3,35 @@ language: node_js
 node_js:
   - "8.12"
 
+  cache:
+    directories:
+      - "node_modules"
+
+  script:
+    -gulp build --prod
+
+  deploy:
+    provider: pages
+    committer-from-gh: true
+    skip-cleanup: true
+    keep-history: true
+    local-dir: build
+    repo: Yourname/compiled-app
+    target-branch: master
+    on:
+      branch: gh-pages
+
+  deploy:
+    provider: pages
+    committer-from-gh: true
+    skip-cleanup: true
+    keep-history: true
+    local-dir: build
+    repo: Yourname/compiled-app
+    target-branch: test
+    on:
+      branch: test-pages
+
+
 notifications:
   email: false
