@@ -12,28 +12,16 @@ node_js:
     - npm start
 
   deploy:
-    provider: pages
-    github-token: $GITHUB_TOKEN
-    committer-from-gh: true
-    skip-cleanup: true
-    keep-history: true
-    local-dir: build
-    repo: Yourname/compiled-app
-    target-branch: master
-    on:
-      branch: gh-pages
-
-  deploy:
-    provider: pages
-    github-token: $GITHUB_TOKEN
-    committer-from-gh: true
-    skip-cleanup: true
-    keep-history: true
-    local-dir: build
-    repo: Yourname/compiled-app
-    target-branch: test
-    on:
-      branch: test-pages
+  provider: pages
+  github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  committer-from-gh: true
+  skip-cleanup: true
+  keep-history: true
+  local-dir: build
+  repo: Yourname/compiled-app
+  target-branch: master
+  on:
+    branch: master
 
 notifications:
   email: false
