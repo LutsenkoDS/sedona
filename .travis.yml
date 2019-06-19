@@ -1,9 +1,9 @@
 language: node_js
 node_js:
-- '9.11'
+- '10'
 
 script:
-  - gulp build
+  - gulp build --prod
 
 deploy:
   provider: pages
