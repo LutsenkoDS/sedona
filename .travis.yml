@@ -1,19 +1,17 @@
 language: node_js
-
 node_js:
-  - "8.12"
+- '10.15'
 
 script:
-  - npm build
+  - gulp build --prod
 
 deploy:
   provider: pages
-  skip_cleanup: true
-  github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
-  keep_history: true
+  github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  committer-from-gh: true
+  skip-cleanup: true
+  keep-history: true
+  local-dir: build
+  target-branch: master
   on:
-    branch: master
-
-notifications:
-  email: false
-
+    branch: gh_pages
