@@ -1,9 +1,9 @@
 language: node_js
 node_js:
-- '9.11'
+- '10.15'
 
 script:
-  - gulp build
+  - gulp build --prod
 
 deploy:
   provider: pages
@@ -12,7 +12,6 @@ deploy:
   skip-cleanup: true
   keep-history: true
   local-dir: build
-  repo: Yourname/compiled-app
   target-branch: master
   on:
-    branch: master
+    branch: gh_pages
