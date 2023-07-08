@@ -22,7 +22,7 @@
     "gulp-webp": "^3.0.0",
     "node-normalize-scss": "^8.0.0",
     "posthtml-include": "^1.2.0",
-    "stylelint": "9.6.x",
+    "stylelint": "15.10.x",
     "stylelint-config-htmlacademy": "0.1.x"
   },
   "scripts": {
